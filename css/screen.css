@@ -111,8 +111,8 @@ ins {
 a {
   text-decoration: none;
   color: #465F58;
-  border-bottom: 0.05263157895em dotted;
   font-weight: bold;
+  padding: 5px;
 }
 
 .preview a {
@@ -177,7 +177,7 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #51615C;
+  background-color: #5dbdcc;
   padding: 0.5em 0 0.5em 0.3em;
   margin-bottom: 0.2em;
 }
@@ -279,7 +279,8 @@ nav {
 #calendar #nav-cal a,
 #projects #nav-pro a,
 #policies #nav-pol a,
-#due_date #nav-dat a {
+#due_date #nav-dat a, 
+#links    #nav-lnk a {
   background-color: #FFCE0B;
 }
 
