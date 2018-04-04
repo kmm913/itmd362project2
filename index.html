@@ -5,10 +5,12 @@
   <title>ITMD 362: Human-Computer Interaction and Web Design (Spring 2018)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <link rel="stylesheet" href="css/screen.css" media="screen" />
+  <link rel="stylesheet" href="css/projects.css" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="http://web.iit.edu/sites/web/themes/iit_web/favicon.ico">
+  <script src="js/syllabus.js" async></script>
 </head>
 <body>
   <div id="page">
@@ -17,388 +19,503 @@
       <p class="tagline">
         Principles and practices of HCI through a mobile-first approach to web design and development.
         Taught by <a href="#instructor">Professor Daniel Krieglstein</a>. Course developed by IIT Professors
-        <a href="https://humansciences.iit.edu/faculty/karl-stolley">Dr. Karl Stolley</a> &amp; Daniel Krieglstein.
+        <a href="https://humansciences.iit.edu/faculty/karl-stolley">Dr. Karl Stolley</a>, &amp; Daniel Krieglstein.
       </p>
       <nav id="navigation">
         <ul class="nav">
-          <li id="nav-cal"><a href="#">Calendar</a></li>
-          <li id="nav-pro"><a href="projects.html">Projects</a></li>
+          <li id="nav-cal"><a href="index.html">Calendar</a></li>
+          <li id="nav-pro"><a href="#">Projects</a></li>
           <li id="nav-pol"><a href="syllabus.html">Syllabus</a></li>
-          <li id="nav-lnk"><a href="#links">Links</a></li>
+          <li id="nav-lnk"><a href="index.html#links">Links</a></li>
         </ul>
       </nav>
     </header>
-    
-    <main id="content">
-      <article class="primary">
-        <h2 class="label">Course Calendar</h2>
-        <p id="tablep">
-          All due dates are terminal at 11:59CT. Work turned in after their time and date will
-          be late and subject to an award of 0 points.
-        </p>
-        <p class="redfont">Work which fails HTML or CSS validation will receive a 50&#x25; point reduction!</p>
-        <section class="topics">
-          <table id="protable">
-            <tr class="tablehead">
-              <td class="tabletitle" colspan="1">Topic Schedule&#58;</td>
-            </tr>
-          </table>
-          <table>  
-            <tr class="tablehead">
-              <td class="firstrow">Date</td>
-              <td class="short">Topic</td>
-              <td>Reading</td>
-            </tr>
-            <tr>
-              <td>01/09 Week 1</td>
-              <td class="alignleft">Class Intro HTML review</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Wroblewski, <em>Mobile First,</em>,
-                    <ul><li class="nobullet">Introduction &#x26; Part 1 &#x28;Ch. 1-3&#x29;</li></ul>
-                  </li>
-                  <li>Reread Mozilla Developer Network <a href="#links">Links</a></li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>01/16 Week 2</td>
-              <td class="alignleft">No Class</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>01/23 Week 3</td>
-              <td class="alignleft">CSS Review, Relative Units</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Jehl, <em>Responsible Responsive Design</em>,
-                    <ul><li class="nobullet">Introduction, Chapters 1 &#x26; 2</li></ul>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>01/30 Week 4</td>
-              <td class="alignleft">JS Review, Responsive Design</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Clark <em>Designing for Touch</em>,
-                    <ul><li class="nobullet">Chapters 1-3</li></ul>
-                  </li>
-                  <li>Wroblewski, <em>Mobile First</em>,
-                    <ul><li class="nobullet">Part 2 &#x28;Ch. 4-7&#x29;</li></ul>
-                  </li>
-                  <li>MDN <a href="https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/responsive_design_building_blocks">The building blocks of responsive design</a></li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>02/06 Week 5</td>
-              <td class="alignleft">Touchscreen, and forms</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Clark <em>Designing for Touch</em>,
-                    <ul><li class="nobullet">Chapters 4 &#x26; 5</li></ul>
-                  </li>
-                  <li>Lupton, ed., <em>Type on Screen</em>,
-                    <ul><li class="nobullet">Chapter 1</li></ul>
-                  </li>
-                  <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms">HTML Forms Guide</a></li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>02/13 Week 6</td>
-              <td class="alignleft">Typography</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Lupton, ed., <em>Type on Screen</em>,
-                    <ul><li class="nobullet">Chapters 2 &#x26; 4</li></ul>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>02/20 Week 7</td>
-              <td class="alignleft">Interface Typography</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Lupton, ed., <em>Type on Screen</em>,
-                    <ul><li class="nobullet">Chapter 5</li></ul>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>02/27 Week 8</td>
-              <td class="alignleft">Colors</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Creative Bloq <a href="http://www.creativebloq.com/colour/colour-theory-11121290">How to master colour theory</a></li>
-                  <li>Google <a href="https://material.io/guidelines/">Material Design</a></li>
-                  <li>
-                    Smashing Magazine, Color Theory for Designers:
-                    <ul>
-                      <li><a href="https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/">Part 1</a>,
-                      <a href="https://www.smashingmagazine.com/2010/02/color-theory-for-designers-part-2-understanding-concepts-and-terminology/">Part 2</a>,
-                      <a href="https://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/">Part 3</a></li>
-                    </ul>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>03/06 Week 9</td>
-              <td class="alignleft">Material Design</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Lupton <em>Type on Screen</em>,
-                    <ul><li class="nobullet">Chapters 6</li></ul>
-                  </li>
-                  <li>Amin Al Hazmani, <a href="https://alistapart.com/article/motion-with-meaning-semantic-animation-in-interface-design">Motion with Meaning</a></li>
-                  <li>Craig Dehner, <a href="http://thekineticui.com/motion-design-is-the-future-of-ui/">Motion Design is the Future of UI</a></li>
-                  <li>Val Head, <a href="https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity">Designing Safer Web Animation For Motion Sensitivity</a></li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>03/13 Week 10</td>
-              <td class="alignleft">NO CLASS</td>
-              <td>Enjoy Spring Break!</td>
-            </tr>
-            <tr>
-              <td>03/20 Week 11</td>
-              <td class="alignleft">Motion</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Cheung, <a href="http://www.uxbooth.com/articles/styling-forms-accessibly/">Styling Forms Accessibly</a></li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>03/27 Week 12</td>
-              <td class="alignleft">HCI Guidelines, Ethics</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Jehl, <em>Responsible Responsive Design</em>,
-                    <ul><li class="nobullet">Chapters 3-4</li></ul>
-                  </li>
-                  <li>Apple, <a href="https://developer.apple.com/ios/human-interface-guidelines/overview/themes/">iOS Design Principles</a></li>
-                  <li>Windows, <a href="https://developer.microsoft.com/en-us/windows/desktop/design">Design applications for the Windows desktop</a></li>
-                  <li>GNOME Desktop, <a href="https://developer.gnome.org/hig/stable/">Human Interface Guidelines</a></li>
+    <main>
+      <section class="primary">
+        <h2 class="label">Calendar</h2>
+          <div class="accordion">
+            <section id="week1">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week One: Course Overview</a>
+                  </dt>
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">  
+                  <h4>MONDAY, JANUARY 8</h4>
+                  <ol>
+                    <li>
+                      Welcome & introductions
+                    </li> 
+                    <li>
+                      Course policies & calendar
+                    </li> 
+                    <li>
+                      Course technologies
+                    </li> 
                   </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>04/03 Week 13</td>
-              <td class="alignleft">Usability</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Krug, <em>Don’t Make Me Think</em>,
-                    <ul><li class="nobullet">Introduction &#x26; Chapters 1-5</li></ul>
-                  </li>
-                  <li>Lupton <em>Type on Screen</em>,
-                    <ul><li class="nobullet">Chapter 3</li></ul>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>04/10 Week 14</td>
-              <td class="alignleft">Emotional Design</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Krug, <em>Don’t Make Me Think</em>,
-                    <ul><li class="nobullet">Chapters 6-7 &#x26; 10-11</li></ul>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>04/17 Week 15</td>
-              <td class="alignleft">Usability Testing</td>
-              <td>
-                <ol class="alignleft">
-                  <li>Krug, <em>Don’t Make Me Think</em>,
-                    <ul><li class="nobullet">Chapters 8-9 &#x26; 12-13</li></ul>
-                  </li>
-                </ol>
-              </td>
-            </tr>
-            <tr>
-              <td>04/24 Week 16</td>
-              <td class="alignleft">Remote User-Testing</td>
-              <td></td>
-            </tr>
-          </table>
-        </section>
-        <section class="due-dates">
-        <p class="redfont">Work which fails HTML or CSS validation will receive a 50&#x25; point reduction!</p>
-          <table>
-            <tr class="tablehead">
-              <td class="firstrow"></td>
-              <td class="tabletitle">Homework Schedule&#58;</td>
-            </tr>
-            <tr class="tablehead">
-              <td>Date</td>
-              <td class="secondrow">Task Due</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><a href="https://github.com/dkriegls/itmd-362-spring2018/tree/master/Labs">Labs</a></td>
-            </tr>
-            <tr>
-              <td>01/30</td>
-              <td class="alignleft">Lab-1</td>
-            </tr>
-            <tr>
-              <td>02/13</td>
-              <td class="alignleft">Lab-2</td>
-            </tr>
-            <tr>
-              <td>02/13</td>
-              <td class="alignleft">Lab-3</td>
-            </tr>
-            <tr>
-              <td>03/06</td>
-              <td class="alignleft">Lab-4</td>
-            </tr>
-            <tr>
-              <td>03/13</td>
-              <td class="alignleft">Lab-5</td>
-            </tr>
-            <tr>
-              <td>03/27</td>
-              <td class="alignleft">Lab-6</td>
-            </tr>
-            <tr>
-              <td>04/03</td>
-              <td class="alignleft">Lab-7</td>
-            </tr>
-            <tr>
-              <td>04/10</td>
-              <td class="alignleft">Lab-8</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><a href="projects.html#project-one">Project One</a></td>
-            </tr>
-            <tr>
-              <td>02/20</td>
-              <td class="alignleft">First Turn In</td>
-            </tr>
-            <tr>
-              <td>02/27</td>
-              <td class="alignleft">Comments Due</td>
-            </tr>
-            <tr>
-              <td>03/06</td>
-              <td class="alignleft">Final Turn In</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><a href="projects.html#project-two">Project Two</a></td>
-            </tr>
-            <tr>
-              <td>03/20</td>
-              <td class="alignleft">Task Analysis Due</td>
-            </tr>
-            <tr>
-              <td>04/03</td>
-              <td class="alignleft">First Turn In</td>
-            </tr>
-            <tr>
-              <td>04/10</td>
-              <td class="alignleft">Comments Due</td>
-            </tr>
-            <tr>
-              <td>04/24</td>
-              <td class="alignleft">Final Turn In</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><a href="projects.html#project-three">Project Three</a></td>
-            </tr>
-            <tr>
-              <td>04/24</td>
-              <td class="alignleft">First and Only Turn In</td>
-            </tr>
-          </table>
-        </section>        
-      </article>
+                  <h4>WEDNESDAY, JANUARY 10 </h4>
+                  <ol>
+                    <li>
+                      Valid, semantic HTML
+                    </li> 
+                    <li>
+                      MDN HTML reference
+                    </li> 
+                    <li>
+                      Forbidden tags/patterns
+                    </li> 
+                    <li>
+                      ARIA roles and attributes in HTML
+                    </li> 
+                    <li>
+                      HTML linting
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section>
+              <section id="week2">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Two: Mobile-First, Relative-Unit CSS and Media Queries</a>
+                  </dt>
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true"> 
+                  <h4>MONDAY, JANUARY 15</h4>        
+                  <ol>
+                    <li>
+                      No Class; MLK Holiday
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, JANUARY 17 </h4>        
+                  <ol>
+                    <li>
+                      MDN CSS reference
+                    </li> 
+                    <li>
+                      Working with reset CSS
+                    </li> 
+                    <li>
+                      Relative units in CSS
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section>
+              <section id="week3">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Three: Unobtrusive JavaScript; Form Elements, Data, and Events</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                  <h4>MONDAY, JANUARY 22 </h4>
+                  <ol>
+                    <li>
+                      Introduce Project One: Onboarding
+                    </li> 
+                    <li>
+                      Form elements: accessible HTML structures
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, JANUARY 24</h4>        
+                  <ol>
+                    <li>
+                      MDN JavaScript and DOM references
+                    </li> 
+                    <li>
+                      Unobtrusive JavaScript
+                    </li> 
+                    <li>
+                      Form elements: data and events
+                    </li> 
+                    <li>
+                      Events and the event loop
+                    </li> 
+                    <li>
+                      The pattern attribute and JavaScript regular expressions
+                    </li> 
+                    <li>
+                      JavaScript hinting and linting
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week4">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Four: Typography: Content, User Interface</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+                  <h4>MONDAY, JANUARY 29</h4>
+                  <ol>
+                    <li>
+                      Type classification and anatomy
+                    </li> 
+                    <li>
+                      Resources at fonts
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, JANUARY 31</h4>        
+                  <ol>
+                    <li>
+                      Working with web fonts
+                    </li> 
+                    <li>
+                      Using the Web Font Loader
+                    </li> 
+                    <li>
+                      Typekit reference on OpenType features in CSS
+                    </li> 
+                    <li>
+                      Setting type for content readability (vs. legibility)
+                    </li> 
+                    <li>
+                      Form elements: CSS styling and the road to hell
+                    </li> 
+                    <li>
+                      The form portion of Normalize.css
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week5">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Five: The New CSS Layout</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
+                  <h4>MONDAY, FEBRUARY 5</h4>
+                  <ol>
+                    <li>
+                      Grid theory
+                    </li> 
+                    <li>
+                      Prototyping and experimenting with grids
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, FEBRUARY 7</h4>        
+                  <ol>
+                    <li>
+                      Layouts, site construction
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week6">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Six: Color and Material Design Systems</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
+                  <h4>MONDAY, FEBRUARY 12 </h4>
+                  <ol>
+                    <li>
+                      Color interaction
+                    </li> 
+                    <li>
+                      Developing palettes
+                    </li>
+                    <li>
+                      CSS color models
+                    </li>  
+                  </ol>
+                  <h4>WEDNESDAY, FEBRUARY 14</h4>        
+                  <ol>
+                    <li>
+                      Taking colors from palette to designs
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week7">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Seven: Git in Team Settings; Catching Up</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion7" aria-hidden="true">
+                  <h4>MONDAY, FEBRUARY 19</h4>
+                  <ol>
+                    <li>
+                      Introduce Project Two
+                    </li> 
+                    <li>
+                      Git and GitHub in team settings
+                    </li>
+                  </ol>
+                  <h4>WEDNESDAY, FEBRUARY 21 </h4>        
+                  <ol>
+                    <li>
+                      Catch up and Q&A over any material covered so far
+                    </li> 
+                    <li>
+                      Material design systems: Google, Apple (color)
+                    </li> 
+                    <li>
+                      Developing custom style guides and systems
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week8">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Eight: Designing for Touch; Motion and Effects</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion8" aria-hidden="true">
+                  <h4>MONDAY, FEBRUARY 26 </h4>
+                  <ol>
+                    <li>
+                      Fingers and screens
+                    </li> 
+                    <li>
+                      Gestures
+                    </li>
+                    <li>
+                      Discoverability and the geography of screens
+                    </li>
+                  </ol>
+                  <h4>WEDNESDAY, FEBRUARY 28 </h4>        
+                  <ol>
+                    <li>
+                      Keeping motion accessible
+                    </li> 
+                    <li>
+                      CSS3 transition and animation properties
+                    </li> 
+                    <li>
+                      JavaScript’s limited role
+                    </li> 
+                    <li>
+                      Working with time
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week9">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Nine: Activity Theory</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion9" aria-hidden="true">
+                  <h4>MONDAY, MARCH 5 </h4>
+                  <ol>
+                    <li>
+                      Activity theory and HCI
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, MARCH 7 </h4>        
+                  <ol>
+                    <li>
+                      Analyzing and designing for tasks within an AT/HCI framework
+                    </li> 
+                    <li>
+                      Improving native form elements for user tasks
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week10">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Ten: Spring Break; No Class</a>
+                  </dt>    
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion16" aria-hidden="true">    
+                  <h4>No Class! Have Fun.</h4> 
+                  </dd>         
+              </dl>
+              </section> 
+              <section id="week11">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Eleven: Review and Refresh</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion10" aria-hidden="true">
+                  <h4>MONDAY, MARCH 19</h4>
+                  <ol>
+                    <li>
+                      No class
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, MARCH 21 </h4>        
+                  <ol>
+                    <li>
+                      Enhancing user interactions with API data
+                    </li> 
+                    <li>
+                      Accessing data APIs from the browser; CORS restrictions
+                    </li> 
+                    <li>
+                      Understanding and parsing JSON API responses
+                    </li> 
+                    <li>
+                      Assisting users without getting in their way
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week12">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Twelve: Usability: Guiding Principles, HCI Guidelines</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion11" aria-hidden="true">
+                  <h4>MONDAY, MARCH 26 </h4>
+                  <ol>
+                    <li>
+                      HCI guidelines
+                    </li> 
+                    <li>
+                      Scoping and planning a full-scale site
+                    </li> 
+                    <li>
+                      Connecting steps in a process to URLs
+                    </li> 
+                    <li>
+                      Loading HTML resources with AJAX to progressively enhance multi-page steps, using jQuery’s load()
+                    </li> 
+                    <li>
+                      Serializing form data to DRY up your JavaScript, using jQuery’s serializeArray()
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, MARCH 28 </h4>        
+                  <ol>
+                    <li>
+                      Designing usable interfaces: seat selection (by request)
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week13">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Thirteen: Ethics and Dark Patterns</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion12" aria-hidden="true">
+                  <h4>MONDAY, APRIL 2</h4>
+                  <ol>
+                    <li>
+                      Ethics and users
+                    </li> 
+                    <li>
+                      The role of emotions in design
+                    </li> 
+                    <li>
+                      Improving the seating demo: parity with the input and chart; sanitizing user data
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, APRIL 4</h4>        
+                  <ol>
+                    <li>
+                      Finishing the seating demo to make it responsive
+                    </li> 
+                    <li>
+                      Form elements within responsive layouts
+                    </li> 
+                    <li>
+                      The trouble with common RWD patterns
+                    </li> 
+                    <li>
+                      Revisiting the grid
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week14">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Fourteen: Traditional Usability Testing Methods</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion13" aria-hidden="true">
+                  <h4>MONDAY, APRIL 9</h4>
+                  <ol>
+                    <li>
+                      Prototyping interfaces with JavaScript (no back end)
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, APRIL 11</h4>        
+                  <ol>
+                    <li>
+                      Introduce Project 3
+                    </li> 
+                    <li>
+                      Finish up JavaScript prototyping stuff
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week15">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Fifteen: Varieties of Remote Testing; Experimental Builds</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion14" aria-hidden="true">
+                  <h4>MONDAY, APRIL 16</h4>
+                  <ol>
+                    <li>
+                      Usability: testing your project, not users
+                    </li> 
+                    <li>
+                      Fundamental testing methods
+                    </li> 
+                    <li>
+                      Testing at a distance
+                    </li>
+                  </ol>
+                  <h4>WEDNESDAY, APRIL 18</h4>        
+                  <ol>
+                    <li>
+                      Experimental builds
+                    </li> 
+                    <li>
+                      A/B testing
+                    </li> 
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+              <section id="week16">
+              <dl>
+                  <dt>
+                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Week Sixteen: Parting Material: Assessing Front-End Libraries and Frameworks</a>
+                  </dt>                  
+                  <dd class="accordion-content accordionItem is-collapsed" id="accordion15" aria-hidden="true">
+                  <h4>MONDAY, APRIL 23</h4>
+                  <ol>
+                    <li>
+                      Assessing front-end libraries and frameworks
+                    </li> 
+                  </ol>
+                  <h4>WEDNESDAY, APRIL 25</h4>        
+                  <ol>
+                    <li>
+                      <strong> NO CLASS MEETING. </strong> Stolley available electronically to provide help on final projects.
+                    </li>  
+                  </ol>
+                </dd>
+              </dl>
+              </section> 
+          </div>            
+      </section>
     </main>
-  
-   <aside id="links">
-    <h3 id="h3wide">Important Links</h3>
-    <div class="link-group">
-      <section id="course-resources">
-        <h4>Course Resources</h4>
-        <ul>
-          <li><a href="https://3.basecamp.com/3649431/projects/">Basecamp</a> (<a href="https://basecamp.com/help/3/guides/apps">apps</a>)</li>
-          <li><a href="https://github.com/dkriegls/itmd-362-spring2018">Github repository for his class</a></li>
-        </ul>
-      </section>
-      <section id="essential-tools">
-        <h4>Essential Tools</h4>
-        <ul>
-          <li><a href="https://validator.w3.org/">HTML Validator</a> (W3.org)</li>
-          <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a> (W3.org)</li>
-          <li><a href="http://jshint.com/">JSHint</a> (Web)</li>
-          <li><a href="http://esprima.org/demo/validate.html">JS Validator</a> (Esprima)</li>
-          <li><a href="http://meyerweb.com/eric/tools/css/reset/reset.css">Eric Meyer CSS Reset</a></li>
-        </ul>
-      </section>
-      <section id="essential-references">
-      <h4>Essential References</h4>
-        <ul>
-          <li id="mdn"><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a> (MDN)
-            <ul>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">HTML</a> &#x2215;
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS</a> &#x2215;
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript</a>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/API">Web APIs &#x26; DOM</a></li>
-            </ul>
-          </li>
-          <li id="technical-specifications">Technical Specifications
-            <ul>
-              <li><a href="http://www.w3.org/TR/html5/">HTML5</a> (W3C)</li>
-              <li><a href="https://developers.whatwg.org">HTML: The Living Standard</a> (WHATWG)</li>
-              <li><a href="http://www.w3.org/Style/CSS/Overview.en.html">CSS</a> (W3C)</li>
-              <li><a href="http://www.ecma-international.org/ecma-262/7.0/index.html">ECMAScript 2016</a> (Ecma)</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </aside>
-
-  <aside id="instructor">
-    <h3>Instructor</h3>
-    <ul>
-      <li><a href="https://appliedtech.iit.edu/people/daniel-krieglstein">Prof. Daniel Krieglstein</a></li>
-      <li><a href="mailto:dkriegls@gmail.com">dkriegls@gmail.com</a></li>
-      <li><a href="https://www.linkedin.com/in/danielkrieglstein">danielkrieglstein</a> on Linkedin</li>
-      <li id="office-hours">
-        <b>Office hours are by request just before or after class or via GChat when avaiable</b>. I&#39;m ususally signed into GChat.
-        Message me any time. I always make students a priority.
-      </li>
-    </ul>
-  </aside>
-  <footer id="footer">
-    <p class="fineprint">
-      Course site design by <a href="https://karlstolley.com/">Karl Stolley</a> and Daniel Krieglstein.
-      Syllabus licensed under
-      <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons</a>.
-      Source hosted on GitHub. Big thanks to
-      <a href="https://basecamp.com">Basecamp</a> and
-      <a href="https://www.addevent.com/">AddEvent</a> for donating resources to further
-      the educational goals of this class.
-    </p>
-  </footer>
-<!--#page-->
-</div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="site.js"></script>
-</body>
-</html> 
- 
+    <footer id="footer">
+      <p class="fineprint">
+        Course site design by <a href="https://karlstolley.com/">Karl Stolley</a> and Daniel Krieglstein.
+        Syllabus licensed under
+        <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons</a>.
+        Source hosted on GitHub. Big thanks to
+        <a href="https://basecamp.com">Basecamp</a> and
+        <a href="https://www.addevent.com/">AddEvent</a> for donating resources to further
+        the educational goals of this class.
+      </p>
+    </footer>
+  </div>
+</body>  
