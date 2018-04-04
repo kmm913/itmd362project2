@@ -13,18 +13,28 @@
   <script src="js/site.js" async></script>
 </head>
 <body>
-<div class="topnav" id="nav">
-  <a href="#home" class="active">Calendar/Home</a>
-  <a href="#Links">Links</a>
-  <a href="#Syllabus">Syllabus</a>
-  <a href="#Projects">Projects</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-<div class="columnsContainer">
-  	<div class="leftColumn">
+<div id="page">
+<header id="header">
+      <h1><small>ITMD 362</small> Human-Computer Interaction and Web&nbsp;Design</h1>
+      <p class="tagline">
+        Principles and practices of HCI through a mobile-first approach to web design and development.
+        Taught by <a href="#instructor">Professor Daniel Krieglstein</a>. Course developed by IIT Professors
+        <a href="https://humansciences.iit.edu/faculty/karl-stolley">Dr. Karl Stolley</a>, &amp; Daniel Krieglstein.
+      </p>
+      <nav id="navigation">
+        <ul class="nav">
+          <li id="nav-cal"><a href="index.html">Calendar</a></li>
+          <li id="nav-pro"><a href="projects.html">Projects</a></li>
+          <li id="nav-pol"><a href="syllabus.html">Syllabus</a></li>
+          <li id="nav-lnk"><a href="#">Links</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <section class="primary">
     <h2>Important Links</h2>
      <h3>Class Resources </h3>
-        <a href="https://3.basecamp.com/3649431/projects/">Basecamp</a>
+        <a href="https://3.basecamp.com/3649431/projects/" target="_blank">Basecamp</a>
         <a href="https://github.com/dkriegls/itmd-362-spring2018">Github</a>
       <h3>Tools </h3>
       <a href="https://validator.w3.org/">HTML validator</a>
@@ -33,13 +43,23 @@
       <a href="http://meyerweb.com/eric/tools/css/reset/reset.css">Eric Meyer CSS reset</a>
       <h3>References </h3>
       <a href="https://developer.mozilla.org/en-US/">mozilla developer network</a>
-<div class="rightColumn">
-    <h2>Instructor Information</h2>
+    <h3>Instructor Information</h3>
       <a href="https://appliedtech.iit.edu/people/daniel-krieglstein">Prof. Daniel Krieglstein</a>
       <a href="https://www.linkedin.com/in/danielkrieglstein">linkedin</a>
       <a href="mailto:dkriegls@gmail.com" target="_top">Email Me</a>
-  </div>
-</div>
+    </section>
+</main>
+<footer id="footer">
+      <p class="fineprint">
+        Course site design by <a href="https://karlstolley.com/">Karl Stolley</a> and Daniel Krieglstein.
+        Syllabus licensed under
+        <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons</a>.
+        Source hosted on GitHub. Big thanks to
+        <a href="https://basecamp.com">Basecamp</a> and
+        <a href="https://www.addevent.com/">AddEvent</a> for donating resources to further
+        the educational goals of this class.
+      </p>
+    </footer>
 </div>
 </body>
 </html>
